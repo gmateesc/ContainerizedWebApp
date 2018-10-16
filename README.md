@@ -249,15 +249,14 @@ runtime.GOROOT
 I have debugged this Go executable with GDB that has support for goroutines.
 
 Here is a screenshot of debugging the program with GDB and setting a breakpoint in 
-the convT2E function
+the convertT2E function
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_3.png" 
-     alt="blob" width="520">
+     alt="blob" width="650">
 
 
-
-The panic happens because the goRoutine converT2E fails under certain circumstances, 
+The panic happens because the goRoutine convertT2E fails under certain circumstances, 
 either because the arguments are wrong or because it cannot allocate the required 
 memory.
 
