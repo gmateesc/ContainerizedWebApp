@@ -46,13 +46,18 @@ I have written two Dockerfiles:
 
 * <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
   Alpine/Dockerfile</a> - optimizes the image size by reducing the 
-  number or RUN commands and using the --no-cache
+  number or RUN commands and using the --no-cache; to enable user www to run the downloaded application, 
+  I set www to be the owner of the application and set the executable bit;
 
 
 * <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
   Alpine_small/Dockerfile</a> - further optimizes the image size as described next.
 
 
+* Because the application runs as user www rather than root, it can not bind to privileged 
+  ports (below 1024) so I changed "EXPOSE 80" to "EXPOSE 8080". 
+
+  
 
 <a name="p11" id="11"></a>
 ## Reducing the image size
@@ -68,7 +73,6 @@ In other words, the small image is only 1 MB biger than the base image, as shown
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/docker_image_size.png" 
      alt="blob" height="100"  width="650">
-
 
 
 
