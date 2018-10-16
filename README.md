@@ -249,20 +249,31 @@ runtime.GOROOT
 I have debugged this Go executable with GDB that has support for goroutines.
 
 Here is a screenshot of debugging the program with GDB and setting a breakpoint in 
-the convertT2E function
+the convT2E function
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_4.png" 
      alt="blob" width="650">
 
 
-The panic happens because the goRoutine convertT2E fails under certain circumstances, 
+The panic happens because the goroutine convT2E fails under certain circumstances, 
 either because the arguments are wrong or because it cannot allocate the required 
 memory.
 
 
-The developer should check all the arguments passed to functions and 
-the possible errors returned by the functions. Whan that makes sense, 
-the developer should add code to recover from the error should be inserted.
+The developer should make the program more robust and maintainable by taking the following steps:
+
+* checking all the actual arguments passed to the functions it develops 
+  and invoking other functions with valid arguments;
+
+* checking for errors returned by the invoked functions; 
+  as shown in the screenshot, the convT2E function is invoked from the user function 
+  main.lightFuse();
+
+* when possible, the developer should add code to recover from the error.
+
+* add logging/debugging statements to the code, to facilitate detecting abnormal program behavior;
+
+* develop unit tests and coverage test for the code.
 
 
