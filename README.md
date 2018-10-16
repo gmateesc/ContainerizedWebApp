@@ -50,9 +50,10 @@ I have written two Dockerfiles:
   image size from 17.4 MB to 5.4 MB.
 
 
+In other words, the small image is only 1 MB biger than the base image, as shown below:
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/docker_image_size.png" 
-     alt="blob" width="600">
+     alt="blob" height=100">
 
 
 
