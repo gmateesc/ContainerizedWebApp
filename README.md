@@ -91,7 +91,9 @@ Both configuration files use the same Docker for Redis.
 The tools start_app.sh and start_app_small.sh under libexec/ can 
 be used to facilitate the building images and running the containers. 
 
-Alternatively, the followinf commands can be used
+
+Alternatively, the following commands can be used to bring up REDIS 
+and the web application
 
 ```shell
    docker-compose up [-d]
@@ -102,7 +104,9 @@ and
    docker-compose -f docker-compose_small.yml up [-d]
 ```
 
-where the -d option can ne used to start the containers in detached mode.
+where the -d option can ne used to start the containers in detached mode, 
+in which case the console output from the Docker container is not sent to 
+the terminal.
 
 
 
@@ -112,29 +116,25 @@ where the -d option can ne used to start the containers in detached mode.
 
 To get the application running, I have used
 
-
 * The environment variable PORT set in the Dockerfile to 8080, 
-  because if the application runs as www, it cannot bind to 
+  because if the application runs as user "www", it cannot bind to 
   port 80;
 
-
 * The environment variable REDIS_URL passed to the container 
-  from the docker-composer.yml file
-
+  from the docker-compose files;
 
 * Port mapping for the web-app container is specified in the 
-  docker-compose file to map the host port 8080 to the 
+  docker-compose file, in order to map the host port 8080 to the 
   container port 8080, so that the web app can be accessed from the host
 
-
 * Port mapping for the redis container is also specified in the 
-  docker-compose file to make the REDIS port in container  
+  docker-compose file, in order to make the REDIS port in container  
   accessible from the host and from the web-app container;
-
 
 * Port mapping is specified in the docker-compose file to 
   map the host port 8080 to the container port 8080, so that 
   the web app can be accessed from the host
+
 
 
 
