@@ -6,6 +6,7 @@
 - [Overview](#p0)
 
 - [Building the Docker images](#p1)
+   - [Reducing the image size] (#p11)
 
 - [The docker-compose configuration filea](#p2)
 
@@ -38,25 +39,34 @@ The layout of the solution is shown in the figure below.
 
 I have built the Docker images for the web application and REDIS using docker-compose.
 
+
 I have written two Dockerfiles:
 
 * <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
   Alpine/Dockerfile</a> - optimizes the image size by reducing the 
   number or RUN commands and using the --no-cache
 
-* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
-  Alpine_small/Dockerfile</a> - further optimizes the image size 
-  not placing the application in the Docker image, but instead 
-  downloading it on the Docker host and then mapping the 
-  host directory to a container volume. This reduces  the 
-  image size from 17.4 MB to 5.4 MB.
 
+* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
+  Alpine_small/Dockerfile</a> - further optimizes the image size as described next.
+
+
+
+<a name="p11" id="112"></a>
+## Reducing the image size
+
+
+The file Alpine_small/Dockerfile achieves minimization of the Docker image size 
+by not placing the application in the Docker image, but instead 
+downloading it on the Docker host and then mapping the host directory 
+to a container volume. This reduces the image size from 17.4 MB to 5.4 MB.
 
 
 In other words, the small image is only 1 MB biger than the base image, as shown below:
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/docker_image_size.png" 
      alt="blob" height="100"  width="650">
+
 
 
 
@@ -162,7 +172,7 @@ http://localhost:8080/search?q=foo
 which I accessed with curl, as shown by this screenshot
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/curl_out.png" 
-     alt="blob" width="400">
+     alt="blob" width="480">
 
 
 as well as with the browser, with some of the responses being shown 
