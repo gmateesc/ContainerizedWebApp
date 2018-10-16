@@ -75,7 +75,9 @@ I have written two Dockerfiles:
 The file Alpine_small/Dockerfile achieves minimization of the Docker image size 
 by not placing the application in the Docker image, but instead 
 downloading it on the Docker host and then mapping the host directory 
-to a container volume. This reduces the image size from 17.4 MB to 5.4 MB.
+to a container volume. As we do not need to download the file, we do not need 
+the wget tool and its dependencies. Overall, not downloading the web application 
+reduces the image size from 17.4 MB to 5.4 MB.
 
 
 In other words, the small image is only 1 MB biger than the base image, as shown below:
