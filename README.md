@@ -237,7 +237,7 @@ The web application is a Go application. One way to verify this is
 to run "strings" on the executable:
 
 ```shell
-# strings /sbin/sreracha
+# strings /sbin/sreracha | egrep "\.GO"
 runtime.GOMAXPROCS
 runtime.GOROOT
 runtime.GOMAXPROCS
