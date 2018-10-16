@@ -32,7 +32,7 @@ The layout of the solution is shown in the figure below.
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/project_layout.png" 
-     alt="blob" width="400">
+     alt="blob" width="390">
 
 
 So the solution has two big parts:
