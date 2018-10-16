@@ -28,6 +28,9 @@ the Fizz Buzz problem.
 The layout of the solution is shown in the figure below.
 
 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/project_layout.png" 
+     alt="blob" width="200">
+
 <img src="https://github.com/gmateesc/ContainerizedWebApp/tree/master/images/project_layout.png" 
      alt="blob" width="400">
 
