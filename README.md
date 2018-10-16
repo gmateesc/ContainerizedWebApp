@@ -171,7 +171,7 @@ start_app.sh -- which invokes docker-compose -- is shown below:
 As mentioned above, the -d option to start_app.sh can be used to start the containers in detached mode. 
 
 While the screenshot does not include the output for 15, it is Buzz, which is wrong, because it 
-shouldby FizzBuzz.
+should be FizzBuzz.
 
 
 
