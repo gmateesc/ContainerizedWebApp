@@ -263,9 +263,8 @@ runtime.GOROOT
 
 
 When run, after printing the answers to Fizz Buzz for numbers up to 30 (but 
-not checking for numbers that are divisible by both 3 and 5, which case the 
-output must be FizzBuzz, while the program outputs Buzz), the application 
-panicks.
+not checking for numbers that are divisible by both 3 and 5, in which case the 
+output must be FizzBuzz while the program outputs Buzz), the application panicks.
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_0.png" 
