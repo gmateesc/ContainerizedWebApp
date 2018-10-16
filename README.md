@@ -52,7 +52,7 @@ I have written two Dockerfiles:
 
 
 
-<a name="p11" id="112"></a>
+<a name="p11" id="11"></a>
 ## Reducing the image size
 
 
