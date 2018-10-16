@@ -159,14 +159,14 @@ I have used the endpoint
 http://localhost:8080/search?q=foo
 ```
 
-and I received different responses, including
+which I accessed with curl, as shown by this screenshot
 
-```
-Magic 8-ball says: Outlook good
-```
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/curl_out.png" 
+     alt="blob" width="400">
 
 
-Some of the responses are shown in the screenshots below.
+as well as with the browser, with some of the responses being shown 
+in the screenshots below.
 
 
 
