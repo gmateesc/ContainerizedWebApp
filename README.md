@@ -16,7 +16,7 @@
 
 - [The Go program to implement Fizz Buzz](#p5)
 
-- [Fixing the panic in the application](#p6)
+- [Investigating the panic in the application](#p6)
 
 
 
@@ -226,7 +226,7 @@ Building and running the Go program produces this output
 
 
 <a name="p6" id="p6"></a>
-## Investigare the panic in the application
+## Investigating the panic in the application
 
 
 The web application is a Go application. One way to verify this is 
