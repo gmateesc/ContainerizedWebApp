@@ -40,7 +40,7 @@ So the solution has two big parts:
 * DockerFiles and docker-compose files for building the Docker images 
   and starting REDIS and the web-application;
  
-* The Go code that implements FiZ Buzz.
+* The Go code that implements Fizz Buzz.
 
 
 
