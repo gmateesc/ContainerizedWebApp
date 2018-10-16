@@ -141,7 +141,7 @@ A screenshot of starting REDIS and the web-app with the tool
 start_app.sh -- which invokes docker-compose -- is shown below:
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/running_web_app.png" 
-     alt="blob" height="100"  width="420">
+     alt="blob" width="420">
 
 
 
