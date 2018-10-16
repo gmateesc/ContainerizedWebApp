@@ -54,8 +54,8 @@ I have written two Dockerfiles:
 
 * <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
   Alpine/Dockerfile</a> - optimizes the image size by reducing the 
-  number or RUN commands and using the --no-cache option to the __apk__ command; 
-  to enable the user _www_ to run the downloaded application, 
+  number or RUN commands and using the --no-cache option to the **apk** command; 
+  to enable the user **www** to run the downloaded application, 
   I set www to be the owner of the application and set the executable bit;
 
 
