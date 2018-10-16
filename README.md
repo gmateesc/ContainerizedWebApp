@@ -120,7 +120,7 @@ and
    docker-compose -f docker-compose_small.yml up [-d]
 ```
 
-where the -d option can ne used to start the containers in detached mode, 
+where the -d option can be used to start the containers in detached mode, 
 in which case the console output from the Docker container is not sent to 
 the terminal.
 
