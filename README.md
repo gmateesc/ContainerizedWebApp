@@ -6,9 +6,9 @@
 - [Overview](#p0)
 
 - [Building the Docker images](#p1)
-   - [Reducing the image size] (#p11)
+   - [Reducing the image size](#p11)
 
-- [The docker-compose configuration filea](#p2)
+- [The docker-compose configuration files](#p2)
 
 - [Getting the application to run](#p3)
 
