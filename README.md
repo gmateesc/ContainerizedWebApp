@@ -40,7 +40,8 @@ I have built the Docker images for the web application and REDIS using docker-co
 
 I have written two Dockerfiles:
 
-* Alpine/Dockerfile - optimizes the image size by reducing the 
+* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/docker-compose.yml">
+  Alpine/Dockerfile</a> - optimizes the image size by reducing the 
   number or RUN commands and using the --no-cache
 
 * Alpine_small/Dockerfile - further optimizes the image size 
