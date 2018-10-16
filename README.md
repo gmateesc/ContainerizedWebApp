@@ -16,7 +16,7 @@
 
 - [The Go program to implement the Fizz Buzz game](#p5)
 
-- [Investigating the bug in the application](#p6)
+- [Investigating the bug in the web application](#p6)
 
 
 
@@ -243,7 +243,7 @@ Building and running the Go program produces this output
 
 
 <a name="p6" id="p6"></a>
-## Investigating the bug in the application
+## Investigating the bug in the web application
 
 
 The web application is a Go application. One way to verify this is 
