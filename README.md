@@ -281,7 +281,7 @@ main.lightFuse and runtime.convT2E:
 
 
 The panic seems to happen because the goroutine convT2E errs under certain circumstances, 
-either because the arguments are wrong or because it cannot allocate the required memory.
+e.g., because the arguments are wrong or because it cannot allocate the required memory.
 
 The developer should make the program more robust and maintainable by taking the following steps:
 
