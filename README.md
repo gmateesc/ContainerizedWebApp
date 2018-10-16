@@ -12,9 +12,11 @@
 
 - [Getting the application to run](#p3)
 
-- [The Go program to implement Fizz Buzz](#p4)
+- [Accessing the web application](#p4)
 
-- [Fixing the panic in the application](#p5)
+- [The Go program to implement Fizz Buzz](#p5)
+
+- [Fixing the panic in the application](#p6)
 
 
 
@@ -158,11 +160,11 @@ As mentioned above, the -d option to start_app.sh can be used to start the conta
 
 
 
-<a name="p3" id="p3"></a>
-## Access the web application
+<a name="p4" id="p4"></a>
+## Accessing the web application
 
 
-I have used the endpoint 
+I have used the endpoint, by analogy with Google search:
 
 
 ```shell
@@ -198,7 +200,7 @@ in the screenshots below.
 
 
 
-<a name="p4" id="p4"></a>
+<a name="p5" id="p5"></a>
 ## The Go program to implement Fizz Buzz
 
 The code in the web application does not implement Fizz Buzz correctly because when a 
@@ -223,7 +225,7 @@ Building and running the Go program produces this output
 
 
 
-<a name="p5" id="p5"></a>
+<a name="p6" id="p6"></a>
 ## Fixing the panic in the application
 
 
