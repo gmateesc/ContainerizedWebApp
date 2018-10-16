@@ -54,8 +54,8 @@ I have written two Dockerfiles:
 
 * <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
   Alpine/Dockerfile</a> - optimizes the image size by reducing the 
-  number or RUN commands and using the --no-cache option to the apk command; 
-  to enable user www to run the downloaded application, 
+  number or RUN commands and using the --no-cache option to the _apk_ command; 
+  to enable the user _www_ to run the downloaded application, 
   I set www to be the owner of the application and set the executable bit;
 
 
@@ -113,7 +113,7 @@ are sing different Dockerfiles to build the web-app
 Both configuration files use the same Docker for Redis.
 
 
-The tools start_app.sh and start_app_small.sh under libexec/ can 
+The tools _start_app.sh_ and _start_app_small.sh_ under _libexec/_ can 
 be used to facilitate the building images and running the containers. 
 
 
@@ -163,7 +163,7 @@ To get the application running, I have used
 
 
 A screenshot of starting REDIS and the web-app with the tool 
-start_app.sh -- which invokes docker-compose -- is shown below:
+_start_app.sh_ -- which invokes docker-compose -- is shown below:
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/running_web_app.png" 
      alt="blob" width="720">
