@@ -35,6 +35,14 @@ The layout of the solution is shown in the figure below.
      alt="blob" width="400">
 
 
+So the solution has two big parts:
+
+* DockerFiles and docker-compose files for building the Docker images 
+  and starting REDIS and the web-application;
+ 
+* The Go code that implements FiZ Buzz.
+
+
 
 <a name="p1" id="p1"></a>
 ## Building the Docker images
