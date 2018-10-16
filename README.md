@@ -272,12 +272,13 @@ The developer should make the program more robust and maintainable by taking the
 
 * checking for errors returned by the invoked functions; 
   as shown in the screenshot, the convT2E function is invoked from the user function 
-  main.lightFuse();
+  main.lightFuse(), so the lightFuse() function should check for the outcome of 
+  the convT2E();
 
-* when possible, the developer should add code to recover from the error.
+* when possible, the developer should add code to recover from the error;
 
-* add logging/debugging statements to the code, to facilitate detecting abnormal program behavior;
+* should add logging/debugging statements to the code, to facilitate detecting abnormal program behavior;
 
-* develop unit tests and coverage test for the code.
+* should develop unit tests and coverage test for the code.
 
 
