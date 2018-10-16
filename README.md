@@ -256,15 +256,15 @@ the convT2E function
 
 
 
-<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_2.png" 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_2.png" 
      alt="blob" width="520">
 
 
-<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_3.png" 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_3.png" 
      alt="blob" width="520">
 
 
-<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_4.png" 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_4.png" 
      alt="blob" width="520">
 
 
