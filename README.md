@@ -40,16 +40,16 @@ I have built the Docker images for the web application and REDIS using docker-co
 
 I have written two Dockerfiles:
 
-* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/docker-compose.yml">
+* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
   Alpine/Dockerfile</a> - optimizes the image size by reducing the 
   number or RUN commands and using the --no-cache
 
-* Alpine_small/Dockerfile - further optimizes the image size 
+* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/Alpine/Dockerfile">
+  Alpine_small/Dockerfile</a> - further optimizes the image size 
   not placing the application in the Docker image, but instead 
   downloading it on the Docker host and then mapping the 
   host directory to a container volume. This reduces  the 
   image size from 17.4 MB to 5.4 MB.
-
 
 
 
@@ -72,13 +72,17 @@ docker-compose_small.yml, respectively.
 The configuration files docker-compose.yml and docker-compose_small.yml 
 are sing different Dockerfiles to build the web-app
 
-* docker-compose.yml uses Alpine/Dockerfile 
+* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/docker-compose.yml">
+  docker-compose.yml</a> 
+  uses Alpine_small/Dockerfile to build the Docker image for the web-applcation;
 
-* docker-compose_small.yml used Alpine_small/Dockerfile 
-  because thhe Docker image created in this case does 
-  not contain the web-app, volume mapping is used 
-  in docker-compose_small.yml to map a host directory 
+* <a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/WebApplication/docker-compose_small.yml">
+  docker-compose_small.yml</a> 
+  uses Alpine_small/Dockerfile to build the Docker image for the web-applcation;
+  because thhe Docker image created in this case does  not contain the web-app 
+  executable, volume mapping is used in docker-compose_small.yml to map a host directory 
   to a container directory
+
 
 
 Both configuration files use the same Docker for Redis.
