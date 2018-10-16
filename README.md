@@ -271,18 +271,16 @@ panicks.
 
 I have debugged this Go executable with GDB that has support for goroutines.
 
-Here is a screenshot of debugging the program with GDB and setting breakpoints  
-in the functions main.lightFuse and runtime.convT2E:
+Here is a screenshot of debugging the program with GDB and setting breakpoints in 
+the functions main.lightFuse and runtime.convT2E:
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_4.png" 
      alt="blob" width="650">
 
 
-The panic happens because the goroutine convT2E fails under certain circumstances, 
-either because the arguments are wrong or because it cannot allocate the required 
-memory.
-
+The panic seems to happen because the goroutine convT2E errs under certain circumstances, 
+either because the arguments are wrong or because it cannot allocate the required memory.
 
 The developer should make the program more robust and maintainable by taking the following steps:
 
