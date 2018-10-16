@@ -252,7 +252,7 @@ Here is a screenshot of debugging the program with GDB and setting a breakpoint 
 the convertT2E function
 
 
-<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_3.png" 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_4.png" 
      alt="blob" width="650">
 
 
