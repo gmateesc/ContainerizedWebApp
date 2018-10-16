@@ -151,7 +151,7 @@ A screenshot of starting REDIS and the web-app with the tool
 start_app.sh -- which invokes docker-compose -- is shown below:
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/running_web_app.png" 
-     alt="blob" width="650">
+     alt="blob" width="720">
 
 As mentioned above, the -d option to start_app.sh can be used to start the containers in detached mode. 
 
