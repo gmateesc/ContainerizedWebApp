@@ -270,10 +270,9 @@ panicks.
      alt="blob" width="650">
 
 
-I have debugged this Go executable with GDB that has support for goroutines.
-
-Here is a screenshot of debugging the program with GDB and setting breakpoints in 
-the functions main.lightFuse and runtime.convT2E:
+To get additiopnal insight, I have debugged this Go executable with GDB that has support for goroutines. 
+Here is a screenshot of debugging the program with GDB and setting breakpoints in the functions 
+main.lightFuse and runtime.convT2E:
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_4.png" 
