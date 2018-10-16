@@ -238,7 +238,7 @@ Here is a screenshot of debugging the program with GDB and setting a breakpoint 
 the convT2E function
 
 
-<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic.png" 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E.png" 
      alt="blob" width="520">
 
 
