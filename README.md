@@ -14,7 +14,7 @@
 
 - [Accessing the web application](#p4)
 
-- [The Go program to implement Fizz Buzz](#p5)
+- [The Go program to implement the Fizz Buzz game](#p5)
 
 - [Investigating the bug in the application](#p6)
 
@@ -218,11 +218,11 @@ in the screenshots below.
 
 
 <a name="p5" id="p5"></a>
-## The Go program to implement Fizz Buzz
+## The Go program to implement the Fizz Buzz game
 
-The code in the web application does not implement Fizz Buzz correctly because when a 
-number is divisible by both 3 and 5 the output must be FizzBuzz, but the code only 
-checks that the number is divisible by 3 or 5, not by both.
+The code in the web application does not implement the Fizz Buzz game correctly, 
+because when a number is divisible by both 3 and 5 the output must be FizzBuzz, 
+but the code only checks that the number is divisible by 3 or 5, not by both.
 
 
 I have written e Go program that produces the correct output, and uses a goroutine 
