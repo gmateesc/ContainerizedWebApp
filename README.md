@@ -29,12 +29,7 @@ The layout of the solution is shown in the figure below.
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/project_layout.png" 
-     alt="blob" width="200">
-
-<img src="https://github.com/gmateesc/ContainerizedWebApp/tree/master/images/project_layout.png" 
      alt="blob" width="400">
-
-
 
 
 
@@ -53,6 +48,12 @@ I have written two Dockerfiles:
   downloading it on the Docker host and then mapping the 
   host directory to a container volume. This reduces  the 
   image size from 17.4 MB to 5.4 MB.
+
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/docker_image_size.png" 
+     alt="blob" width="400">
+
 
 
 
@@ -151,6 +152,20 @@ Magic 8-ball says: My reply is no
 
 Some of the responses are shown in the screenshots below.
 
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/webapp_1.png" 
+     alt="blob" width="400">
+
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/webapp_2.png" 
+     alt="blob" width="400">
+
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/webapp_3.png" 
+     alt="blob" width="400">
 
 
 
