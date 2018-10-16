@@ -80,7 +80,7 @@ the wget tool and its dependencies. Overall, not downloading the web application
 reduces the image size from 17.4 MB to 5.4 MB.
 
 
-In other words, the small image is only 1 MB biger than the base image, as shown below:
+In other words, the small image is only 1 MB bigger than the base image, as shown below:
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/docker_image_size.png" 
      alt="blob" height="100"  width="650">
