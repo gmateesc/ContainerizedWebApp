@@ -16,7 +16,7 @@
 
 - [The Go program to implement Fizz Buzz](#p5)
 
-- [Investigating the panic in the application](#p6)
+- [Investigating the bug in the application](#p6)
 
 
 
@@ -169,6 +169,8 @@ start_app.sh -- which invokes docker-compose -- is shown below:
 
 As mentioned above, the -d option to start_app.sh can be used to start the containers in detached mode. 
 
+While the screenshot does not include the output for 15, it is Buzz, which is wrong, because it 
+shouldby FizzBuzz.
 
 
 
@@ -238,7 +240,7 @@ Building and running the Go program produces this output
 
 
 <a name="p6" id="p6"></a>
-## Investigating the panic in the application
+## Investigating the bug in the application
 
 
 The web application is a Go application. One way to verify this is 
@@ -257,11 +259,20 @@ runtime.GOROOT
 ```
 
 
+When run, after printing the answers to Fizz Buzz for numbers up to 30 (but 
+not checking for numbers that are divisible by both 3 and 5, which case the 
+output must be FizzBuzz, while the program outputs Buzz), the application 
+panicks.
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_0.png" 
+     alt="blob" width="650">
+
 
 I have debugged this Go executable with GDB that has support for goroutines.
 
-Here is a screenshot of debugging the program with GDB and setting a breakpoint in 
-the convT2E function
+Here is a screenshot of debugging the program with GDB and setting breakpoints  
+in the functions main.lightFuse and runtime.convT2E:
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E_4.png" 
