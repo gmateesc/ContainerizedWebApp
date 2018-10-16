@@ -229,22 +229,53 @@ Building and running the Go program produces this output
 ## Investigare the panic in the application
 
 
-The web application is a Go application. The panic happens because the 
-function converT2E  fails at some point, either because the arguments 
-are wrong or because it cannot allocate the required memory.
+The web application is a Go application. One way to verify this is 
+to run "strings" on the executable:
 
+```shell
+# strings /sbin/sreracha
+runtime.GOMAXPROCS
+runtime.GOROOT
+runtime.GOMAXPROCS
+runtime.GOROOT
+runtime.GOMAXPROCS
+runtime.GOROOT
+runtime.GOMAXPROCS
+runtime.GOROOT
+```
+
+
+
+I have debugged this Go executable with GDB that has support for goroutines.
 
 Here is a screenshot of debugging the program with GDB and setting a breakpoint in 
 the convT2E function
-
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_convT2E.png" 
      alt="blob" width="520">
 
 
 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_2.png" 
+     alt="blob" width="520">
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_3.png" 
+     alt="blob" width="520">
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic_4.png" 
+     alt="blob" width="520">
+
+
+
+The panic happens because the function converT2E fails under certain circumstances, 
+either because the arguments are wrong or because it cannot allocate the required 
+memory.
+
+
 The developer should check all the arguments passed to functions and 
 the possible errors returned by the functions. Whan that makes sense, 
-code to recover from the error should be inserted.
+the developer should add code to recover from the error should be inserted.
 
 
