@@ -226,12 +226,21 @@ Building and running the Go program produces this output
 
 
 <a name="p6" id="p6"></a>
-## Fixing the panic in the application
+## Investigare the panic in the application
 
 
 The web application is a Go application. The panic happens because the 
 function converT2E  fails at some point, either because the arguments 
 are wrong or because it cannot allocate the required memory.
+
+
+Here is a screenshot of debugging the program with GDB and setting a breakpoint in 
+the convT2E function
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/panic.png" 
+     alt="blob" width="520">
+
 
 
 The developer should check all the arguments passed to functions and 
