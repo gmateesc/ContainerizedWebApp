@@ -207,7 +207,7 @@ The Go program fizz_buzz.go can be browsed
 Building and running the Go program produces this output
 
 
-<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/build_run_go.png.png" 
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/build_run_go.png" 
      alt="blob" width="520">
 
 
