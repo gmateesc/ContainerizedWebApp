@@ -133,7 +133,7 @@ To get the application running, I have used
 
 * Port mapping is specified in the docker-compose file to 
   map the host port 8080 to the container port 8080, so that 
-  the web app can be accessed from the host
+  the web app can be accessed from the host.
 
 
 
@@ -143,8 +143,7 @@ start_app.sh -- which invokes docker-compose -- is shown below:
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/running_web_app.png" 
      alt="blob" width="650">
 
-
-
+As mentioned above, the -d option to start_app.sh can be used to start the containers in detached mode. 
 
 
 
@@ -163,8 +162,9 @@ http://localhost:8080/search?q=foo
 and I received different responses, including
 
 ```
-Magic 8-ball says: My reply is no
+Magic 8-ball says: Outlook good
 ```
+
 
 Some of the responses are shown in the screenshots below.
 
@@ -196,10 +196,19 @@ number is divisible by both 3 and 5 the output must be FizzBuzz, but the code on
 checks that the number is divisible by 3 or 5, not by both.
 
 
-
 I have written e Go program that produces the correct output, and uses a goroutine 
 to generate the output and a channel to pass the generated output from the function 
 FizzBuzz to the main function.
+
+The Go program fizz_buzz.go can be browsed 
+<a href="https://github.com/gmateesc/ContainerizedWebApp/blob/master/GO/src/fizz_buzz/fizz_buzz.go">here</a>.
+
+
+Building and running the Go program produces this output
+
+
+<img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/build_run_go.png.png" 
+     alt="blob" width="520">
 
 
 
