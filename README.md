@@ -52,7 +52,7 @@ I have written two Dockerfiles:
 
 
 <img src="https://github.com/gmateesc/ContainerizedWebApp/blob/master/images/docker_image_size.png" 
-     alt="blob" width="400">
+     alt="blob" width="600">
 
 
 
